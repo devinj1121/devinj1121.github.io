@@ -158,6 +158,10 @@ input, select, textarea {
 		color: inherit;
 	}
 
+	a.logo{
+		border-bottom: none;
+	}
+
 		a:hover {
 			border-bottom-color: transparent;
 		}
@@ -286,7 +290,7 @@ input, select, textarea {
 	hr {
 		border: 0;
 		border-bottom: solid 1px #ffffff;
-		margin: 2.75rem 0;
+		margin: 2.0rem 0;
 	}
 
 	.align-left {
@@ -299,6 +303,27 @@ input, select, textarea {
 
 	.align-right {
 		text-align: right;
+	}
+
+	.container{
+		display:flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		column-gap:20px;
+	}
+
+	.specialization{
+		height:250px;
+		width:250px;
+		border: solid 1px #ffffff;
+		border-radius: 4px;
+		text-align: center;
+	}
+
+	.spec-title{
+		margin-top: 10px;
+		margin-bottom: 5px;
+		font-weight: bold;
 	}
 
 /* Form */
@@ -699,12 +724,22 @@ input, select, textarea {
 			display: block;
 			margin-left: auto;
   			margin-right: auto;
-			width: 50%;
+			width: 250px;
 		}
 
 			.image.main img {
 				width: 100%;
 			}
+
+		.sig {
+			border-radius: 4px;
+			display: block;
+			position: relative;
+			/* text-align: right; */
+			margin-left: 350px;
+  			/* margin-right: auto; */
+			width: 25%; 
+		}
 
 		@media screen and (max-width: 736px) {
 
@@ -737,7 +772,7 @@ input, select, textarea {
 	ul {
 		list-style: disc;
 		margin: 0 0 2rem 0;
-		padding-left: 1em;
+		padding-left: 2em;
 	}
 
 		ul li {
@@ -758,6 +793,10 @@ input, select, textarea {
 					border-top: 0;
 					padding-top: 0;
 				}
+
+	/* .contents{
+		border: 1px solid #ffffff;
+	} */
 
 	dl {
 		margin: 0 0 2rem 0;
@@ -954,14 +993,16 @@ input, select, textarea {
 
 		table td {
 			padding: 0.75em 0.75em;
+			text-align: center;
 		}
+		table td + td { border-left:2px solid #ffffff; }
 
 		table th {
 			color: #ffffff;
 			font-size: 0.9em;
 			font-weight: 600;
-			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
+			padding: 0.75em 0.75em 0.75em 0.75em;
+			text-align: center;
 		}
 
 		table thead {
@@ -997,6 +1038,13 @@ input, select, textarea {
 			table.alt tfoot {
 				border-top: 0;
 			}
+
+/* Language Selector */
+.language {
+	position: absolute;
+	top: 10px;
+	right:25px;
+  }
 
 /* Button */
 
@@ -1213,6 +1261,14 @@ input, select, textarea {
 			display: block;
 		}
 
+		#wrapper .logo {
+			width: 150px;
+			height: 150px;
+			top: 0px;
+			left: 0px;
+			position:relative;
+		}
+
 		@media screen and (max-width: 1680px) {
 
 			#wrapper {
@@ -1293,9 +1349,9 @@ input, select, textarea {
 			}
 
 		#header .logo {
-			width: 5.5rem;
-			height: 5.5rem;
-			line-height: 5.5rem;
+			width: 6.5rem;
+			height: 6.5rem;
+			line-height: 6.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
 		}
