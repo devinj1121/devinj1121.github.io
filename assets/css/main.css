@@ -319,9 +319,9 @@ input, select, textarea {
 		border-radius: 4px;
 		text-align: center;
 	}
-
+	
 	.spec-title{
-		margin-top: 10px;
+		margin-top: 5px;
 		margin-bottom: 5px;
 		font-weight: bold;
 	}
