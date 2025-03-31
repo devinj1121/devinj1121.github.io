@@ -748,8 +748,9 @@ input, select, textarea {
 			/* text-align: right; */
 			margin-left: 350px;
   			/* margin-right: auto; */
-			width: 25%; 
+			width: 40%; 
 		}
+
 
 		@media screen and (max-width: 736px) {
 
