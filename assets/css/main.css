@@ -745,9 +745,7 @@ input, select, textarea {
 			border-radius: 4px;
 			display: block;
 			position: relative;
-			/* text-align: right; */
 			margin-left: 350px;
-  			/* margin-right: auto; */
 			width: 40%; 
 		}
 
