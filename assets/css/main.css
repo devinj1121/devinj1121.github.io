@@ -2536,11 +2536,6 @@ input, select, textarea {
 			height: 1.85rem;
 		}
 
-		.service-language-chevron {
-			transform: rotate(-90deg);
-			transform-origin: center;
-		}
-
 		.service-language-source p,
 		.service-language-target p {
 			display: flex;
