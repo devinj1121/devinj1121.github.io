@@ -1,36 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 48" role="img" aria-labelledby="title">
-  <title>United Kingdom</title>
-  <defs>
-    <clipPath id="clip">
-      <rect x="2" y="2" width="60" height="44" rx="12" ry="12"/>
-    </clipPath>
-    <clipPath id="inner">
-      <rect width="64" height="48"/>
-    </clipPath>
-    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
-      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-  <g clip-path="url(#clip)">
-    <rect width="64" height="48" fill="#1f429b"/>
-    <g stroke="#ffffff" stroke-width="10" clip-path="url(#inner)">
-      <line x1="0" y1="0" x2="64" y2="48"/>
-      <line x1="64" y1="0" x2="0" y2="48"/>
-    </g>
-    <g stroke="#c93743" stroke-width="5.5" clip-path="url(#inner)">
-      <line x1="0" y1="0" x2="64" y2="48"/>
-      <line x1="64" y1="0" x2="0" y2="48"/>
-    </g>
-    <g stroke="#ffffff" stroke-width="16">
-      <line x1="32" y1="0" x2="32" y2="48"/>
-      <line x1="0" y1="24" x2="64" y2="24"/>
-    </g>
-    <g stroke="#c93743" stroke-width="9">
-      <line x1="32" y1="0" x2="32" y2="48"/>
-      <line x1="0" y1="24" x2="64" y2="24"/>
-    </g>
-    <rect width="64" height="24" fill="url(#shine)"/>
-  </g>
-  <rect x="2" y="2" width="60" height="44" rx="12" ry="12" fill="none" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 48" role="img" aria-label="United Kingdom flag">
+  <rect width="64" height="48" rx="8" ry="8" fill="#1f429b"/>
+  <polygon points="0,4 4,0 64,44 60,48" fill="#ffffff"/>
+  <polygon points="60,0 64,4 4,48 0,44" fill="#ffffff"/>
+  <polygon points="0,7 7,0 64,41 57,48" fill="#c93743"/>
+  <polygon points="57,0 64,7 7,48 0,41" fill="#c93743"/>
+  <rect x="26" width="12" height="48" fill="#ffffff"/>
+  <rect y="18" width="64" height="12" fill="#ffffff"/>
+  <rect x="28" width="8" height="48" fill="#c93743"/>
+  <rect y="20" width="64" height="8" fill="#c93743"/>
 </svg>
