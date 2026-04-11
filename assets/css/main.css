@@ -2223,7 +2223,7 @@ input, select, textarea {
 
 	.services-gallery {
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 		gap: 1.5rem;
 		margin: 2rem 0;
 	}
@@ -2302,14 +2302,21 @@ input, select, textarea {
 	}
 
 	.service-card-details ul.about-service-text {
-		margin: 0.35rem 0 0 1.05rem;
-		padding-right: 0.2rem;
+		list-style: none;
+		margin: 0.35rem 0 0 0;
+		padding: 0 0.2rem 0 0;
 		font-size: 0.9rem;
 		line-height: 1.45;
+		text-align: left;
 	}
 
 	.service-card-details ul.about-service-text li {
+		padding-left: 0;
 		margin-bottom: 0.35rem;
+	}
+
+	.service-card-details ul.about-service-text li::before {
+		display: none;
 	}
 
 	.service-card-details ul.about-service-text li:last-child {
