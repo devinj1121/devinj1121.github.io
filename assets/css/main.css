@@ -373,8 +373,17 @@ input, select, textarea {
 	}
 
 	#header .home-static-keywords {
-		margin-top: 2.4rem;
-		margin-bottom: 0;
+		margin-top: 1.2rem;
+		margin-bottom: 1.2rem;
+	}
+
+	#header > a.logo {
+		display: block;
+		line-height: 0;
+	}
+
+	#header nav {
+		margin-top: 1.2rem;
 	}
 
 	.about-cta {
@@ -488,16 +497,37 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 480px) {
-		#header .home-static-keywords,
+		#header .logo {
+			width: 162px;
+			height: 162px;
+		}
+
+		#header .home-static-keywords {
+			width: 100%;
+			max-width: 100%;
+			padding: 0 0.35rem;
+			font-size: clamp(0.66rem, 2.95vw, 0.95rem);
+			letter-spacing: 0;
+			row-gap: 0;
+			flex-wrap: nowrap;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			line-height: 1.15;
+		}
+
 		#about .about-keywords {
 			width: 100%;
 			max-width: 100%;
 			padding: 0 0.35rem;
-			font-size: clamp(0.54rem, 2.5vw, 0.78rem);
+			font-size: clamp(0.6rem, 2.7vw, 0.86rem);
 			letter-spacing: 0;
 			row-gap: 0;
 			flex-wrap: nowrap;
+			flex-direction: row;
 			justify-content: center;
+			align-items: center;
+			line-height: 1.15;
 		}
 
 		#header .home-static-keywords > span,
@@ -507,6 +537,7 @@ input, select, textarea {
 
 		#header .home-static-keywords .about-keywords-separator,
 		#about .about-keywords .about-keywords-separator {
+			display: inline;
 			padding: 0 0.16rem;
 		}
 	}
@@ -1965,6 +1996,12 @@ input, select, textarea {
 
 			#header {
 				padding: 1.5rem 0;
+			}
+
+			#header .logo {
+				width: 8.4rem;
+				height: 8.4rem;
+				line-height: 8.4rem;
 			}
 
 				#header .content .inner {
