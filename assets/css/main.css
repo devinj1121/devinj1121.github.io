@@ -487,6 +487,30 @@ input, select, textarea {
 		}
 	}
 
+	@media screen and (max-width: 480px) {
+		#header .home-static-keywords,
+		#about .about-keywords {
+			width: 100%;
+			max-width: 100%;
+			padding: 0 0.35rem;
+			font-size: clamp(0.54rem, 2.5vw, 0.78rem);
+			letter-spacing: 0;
+			row-gap: 0;
+			flex-wrap: nowrap;
+			justify-content: center;
+		}
+
+		#header .home-static-keywords > span,
+		#about .about-keywords > span {
+			white-space: nowrap;
+		}
+
+		#header .home-static-keywords .about-keywords-separator,
+		#about .about-keywords .about-keywords-separator {
+			padding: 0 0.16rem;
+		}
+	}
+
 	.professional-summary {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
