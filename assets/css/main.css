@@ -348,9 +348,10 @@ input, select, textarea {
 
 	.about-keywords {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		flex-wrap: wrap;
+		gap: 0.25rem;
 		width: fit-content;
 		margin: 0.6rem auto 1.2rem;
 		color: #ffffff;
@@ -364,7 +365,8 @@ input, select, textarea {
 	}
 
 	.about-keywords-separator {
-		padding: 0 0.5rem;
+		display: block;
+		padding: 0.25rem 0;
 	}
 
 	.home-static-keywords {
@@ -523,8 +525,7 @@ input, select, textarea {
 			font-size: clamp(0.6rem, 2.7vw, 0.86rem);
 			letter-spacing: 0;
 			row-gap: 0;
-			flex-wrap: nowrap;
-			flex-direction: row;
+			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			line-height: 1.15;
