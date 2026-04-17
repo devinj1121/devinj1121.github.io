@@ -522,7 +522,7 @@ input, select, textarea {
 			width: 100%;
 			max-width: 100%;
 			padding: 0 0.35rem;
-			font-size: clamp(0.6rem, 2.7vw, 0.86rem);
+			font-size: clamp(0.75rem, 3vw, 1rem);
 			letter-spacing: 0;
 			row-gap: 0;
 			flex-direction: column;
