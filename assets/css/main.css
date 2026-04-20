@@ -583,6 +583,9 @@ input, select, textarea {
 		.about-profile-grid {
 			grid-template-columns: 1fr;
 		}
+		.about-profile-photo {
+			margin: 0 auto;
+		}
 	}
 
 	.info-card {
