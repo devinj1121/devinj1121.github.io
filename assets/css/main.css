@@ -567,10 +567,12 @@ input, select, textarea {
 
 	.about-profile-image {
 		width: 100%;
-		height: auto;
+		height: 200px;
 		border-radius: 14px;
 		display: block;
 		max-width: 240px;
+		object-fit: cover;
+		object-position: center 30%;
 	}
 
 	.about-profile-copy p {
