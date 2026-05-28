@@ -401,7 +401,7 @@ input, select, textarea {
 	.about-contact-cta .button.primary {
 		background-color: #e4ebf1;
 		color: #1f2930 !important;
-		border-radius: 999px;
+		border-radius: 10px;
 		letter-spacing: 0.12rem;
 		padding: 0 1.6rem 0 1.7rem;
 		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3), 0 10px 24px rgba(0, 0, 0, 0.2);
@@ -463,7 +463,7 @@ input, select, textarea {
 		display: block;
 		margin: 0.1rem 0 0.15rem;
 		padding: 0.18rem 0.6rem 0.2rem;
-		border-radius: 999px;
+		border-radius: 6px;
 		font-size: 0.76rem;
 		font-weight: 700;
 		letter-spacing: 0.08em;
@@ -679,7 +679,7 @@ input, select, textarea {
 		margin: 0.6rem 0 0.3rem;
 		padding: 0.2rem 0.6rem;
 		border: 0;
-		border-radius: 999px;
+		border-radius: 10px;
 		background: rgba(255, 255, 255, 0.08);
 		box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
 		-webkit-user-select: none;
@@ -706,7 +706,7 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.6);
 		padding: 0.22rem 0.65rem;
 		border: 1px solid rgba(255, 255, 255, 0.18);
-		border-radius: 999px;
+		border-radius: 6px;
 		white-space: nowrap;
 		-webkit-user-select: none;
 		-moz-user-select: none;
@@ -1457,8 +1457,9 @@ input, select, textarea {
 			}
 
 			ul.icons li a {
-				border-radius: 100%;
-				box-shadow: inset 0 0 0 1px #ffffff;
+				border-radius: 10px;
+				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+				background-color: rgba(0, 0, 0, 0.5);
 				display: inline-block;
 				height: 2.0rem;
 				line-height: 2.0rem;
@@ -1705,15 +1706,15 @@ input, select, textarea {
 		}
 
 		#bg:after {
-			-moz-transform: scale(1.125);
-			-webkit-transform: scale(1.125);
-			-ms-transform: scale(1.125);
-			transform: scale(1.125);
+			-moz-transform: scale(1.0);
+			-webkit-transform: scale(1.0);
+			-ms-transform: scale(1.0);
+			transform: scale(1.0);
 			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/bg1.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1907,9 +1908,9 @@ input, select, textarea {
 			list-style: none;
 			padding: 0.2rem;
 			padding-left: 0.2rem;
-			border: solid 1px rgba(255, 255, 255, 0.42);
-			border-radius: 999px;
-			background: rgba(255, 255, 255, 0.08);
+			border: solid 1px rgba(255, 255, 255, 0.3);   
+			border-radius: 10px;
+			background: rgba(0, 0, 0, 0.5);
 			box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
 		}
 
@@ -1934,7 +1935,7 @@ input, select, textarea {
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
-					border-radius: 999px;
+					border-radius: 7px;
 					transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 				}
 
@@ -3026,7 +3027,7 @@ details[open] > p {
 #contact input[type="tel"],
 #contact input[type="password"],
 #contact select {
-border-radius: 999px;
+border-radius: 10px;
 padding-left: 1.15rem;
 }
 
@@ -3036,7 +3037,7 @@ border-radius: 1rem;
 
 #contact input[type="submit"],
 #contact button[type="submit"] {
-border-radius: 999px;
+border-radius: 10px;
 }
 
 
