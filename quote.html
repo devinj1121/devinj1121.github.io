@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Get a quote · Sen Linguistics</title>
+<meta name="description" content="Request a fixed quote for Japanese or Chinese translation, including certified USCIS translations, or describe a software project.">
+<meta name="theme-color" content="#15181b">
+<link rel="icon" type="image/png" href="images/favicon1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=20261102e">
+</head>
+<body>
+<a class="skip" href="#order">Skip to the form</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Sen Linguistics home">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <rect class="logo-bg" x="5" y="5" width="90" height="90" rx="11"/>
+        <g class="logo-ln" fill="none" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="50" cy="50" r="36"/>
+          <path d="M29.6 70.5V34q0-4 4-4H45M29.6 39.6H45M29.6 49.4H45"/>
+          <path d="M70.4 70.5V34q0-4-4-4H55M70.4 39.6H55M70.4 49.4H55"/>
+          <path d="M41.7 68.4l7-7q1.3-1.3 2.6 0l7 7"/>
+        </g>
+      </svg>
+      Sen Linguistics
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html#translation">Translation</a>
+      <a href="index.html#software">Software</a>
+      <a href="index.html#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="qpage">
+  <div class="wrap">
+    <div>
+      <h1>Get a quote</h1>
+      <p class="intro">Tell us what you have. You get a reply within one business day. <span class="draft">draft</span></p>
+
+      <ol class="next" data-for="T" aria-label="What happens next">
+        <li><b>Send documents</b><span>Every page, including stamps and backs.</span></li>
+        <li><b>Get a fixed quote</b><span>Pages are counted. Price and delivery date by email.</span></li>
+        <li><b>Approve and pay</b><span>Work starts when you approve. Nothing is charged before.</span></li>
+        <li><b>Receive the signed PDF</b><span>The translation with its certificate, ready to file.</span></li>
+      </ol>
+      <ol class="next" data-for="S" aria-label="What happens next" hidden>
+        <li><b>Describe the problem</b><span>No spec needed. Say what your team can't keep up with.</span></li>
+        <li><b>Reply with questions</b><span>Devin reads it and writes back.</span></li>
+        <li><b>Short call</b><span>About your sources, your review steps, and your standard.</span></li>
+        <li><b>Written scope and price</b><span>If it fits, you get both in writing before any work.</span></li>
+      </ol>
+
+      <div class="side-note">
+        <p>Documents are used only for the job. NDAs on request. <span class="draft">data handling</span></p>
+        <p>Prefer email? <a href="mailto:devin@sen-linguistics.com">devin@sen-linguistics.com</a></p>
+      </div>
+    </div>
+
+    <div class="order" id="order">
+      <div class="tabs" role="tablist" aria-label="Kind of request">
+        <button type="button" role="tab" id="tab-t" aria-controls="pane-t" aria-selected="true">Translation<small>Certified or standard</small></button>
+        <button type="button" role="tab" id="tab-s" aria-controls="pane-s" aria-selected="false" tabindex="-1">Software project<small>Pipelines, QA, tools</small></button>
+      </div>
+
+      <div role="tabpanel" id="pane-t" aria-labelledby="tab-t">
+        <form class="panel" novalidate data-kind="T">
+          <div class="grid">
+            <fieldset class="box full">
+              <legend class="lbl">Ordering as</legend>
+              <div class="ticks">
+                <label><input type="radio" name="who" value="Law firm" checked> Law firm</label>
+                <label><input type="radio" name="who" value="Applicant"> Applicant</label>
+                <label><input type="radio" name="who" value="Patent / IP"> Patent / IP</label>
+                <label><input type="radio" name="who" value="Other"> Other</label>
+              </div>
+            </fieldset>
+            <label class="box">
+              <span class="lbl">Languages</span>
+              <select name="pair" id="t-pair">
+                <option>Japanese → English</option>
+                <option>Chinese (Simplified) → English</option>
+                <option>Chinese (Traditional) → English</option>
+                <option>English → Japanese</option>
+              </select>
+            </label>
+            <label class="box">
+              <span class="lbl">For</span>
+              <select name="use" id="t-use">
+                <option>USCIS / visa case</option>
+                <option>Patent matter</option>
+                <option>Court or legal matter</option>
+                <option>Research or publication</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label class="box">
+              <span class="lbl">Name</span>
+              <input type="text" name="name" id="t-name" autocomplete="name" required>
+            </label>
+            <label class="box">
+              <span class="lbl">Email</span>
+              <input type="email" name="email" id="t-email" autocomplete="email" required>
+            </label>
+            <label class="box full">
+              <span class="lbl">Notes <em>optional: deadline, matter reference</em></span>
+              <textarea name="notes" id="t-notes" rows="2"></textarea>
+            </label>
+            <label class="box full opt">
+              <span class="opt-row"><input type="checkbox" name="eval" id="t-eval" value="Yes"><span>Add a degree evaluation <span class="draft">draft</span><em>The US equivalent of a Japanese or Chinese degree, for USCIS or an employer</em></span></span>
+            </label>
+          </div>
+          <label class="drop" id="drop">
+            <svg width="26" height="30" viewBox="0 0 34 40" aria-hidden="true"><path d="M2 2h20l10 10v26H2z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M22 2v10h10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M17 31V18m-5 5 5-5 5 5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <div><strong>Add documents</strong><span>PDFs or clear phone photos. Every page, including stamps and backs.</span></div>
+            <input type="file" id="t-files" name="files" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.heic">
+          </label>
+          <ul class="files" id="list" aria-live="polite"></ul>
+          <div class="submit">
+            <p>Nothing is charged now. You approve a fixed quote first.</p>
+            <button class="go" type="submit">Get a quote</button>
+          </div>
+        </form>
+      </div>
+
+      <div role="tabpanel" id="pane-s" aria-labelledby="tab-s" hidden>
+        <form class="panel" novalidate data-kind="S">
+          <div class="grid">
+            <label class="box full">
+              <span class="lbl">Closest to</span>
+              <select name="what" id="s-what">
+                <option>Drafting</option>
+                <option>Checking documents</option>
+                <option>Translation at volume</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+            <label class="box full">
+              <span class="lbl">What can't your team keep up with?</span>
+              <textarea name="desc" id="s-desc" rows="4" placeholder="e.g. We publish new pages every week, and each one has to clear legal review."></textarea>
+            </label>
+            <label class="box">
+              <span class="lbl">Name</span>
+              <input type="text" name="name" id="s-name" autocomplete="name" required>
+            </label>
+            <label class="box">
+              <span class="lbl">Email</span>
+              <input type="email" name="email" id="s-email" autocomplete="email" required>
+            </label>
+          </div>
+          <div class="submit">
+            <p>No spec needed. You get a reply with questions, then a short call.</p>
+            <button class="go" type="submit">Send the brief</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="ticket" role="status" tabindex="-1" hidden>
+        <h3>Received.</h3>
+        <p class="ref"></p>
+        <dl></dl>
+        <p class="next-msg"></p>
+        <p class="note">Preview only. Nothing was sent. <span class="draft">no backend yet</span></p>
+        <button type="button" data-reset>Start another request</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Sen Linguistics</span>
+    <span><a href="mailto:devin@sen-linguistics.com">devin@sen-linguistics.com</a> · <a href="https://www.linkedin.com/in/dt-johnson/" rel="noopener">LinkedIn</a></span>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=20261102e"></script>
+</body>
+</html>
