@@ -121,7 +121,7 @@
       ticket.querySelector('.ref').textContent='Reference SEN-'+k+'-'+s+'-'+Math.floor(1000+Math.random()*9000);
       ticket.querySelector('.next-msg').textContent=k==='T'
         ?'Next: pages are counted and you get a fixed quote and delivery date by email. You pay after you approve it.'
-        :'Next: Devin reads it and replies with questions, then a short call. If it fits, you get a written scope and price.';
+        :'Next: Devin reads it and replies by email with questions. If it fits, you get a written scope and price.';
       form.parentNode.hidden=true; ticket.hidden=false; ticket.focus();
     });
     [].slice.call(form.querySelectorAll('input,textarea')).forEach(function(el){
