@@ -277,12 +277,50 @@ footer a{color:var(--ink-2)}
 .pubs cite{display:block;font-style:normal;font-weight:500;color:var(--ink);margin-bottom:.15rem}
 .pubs .src{display:block;font-size:.84rem;color:var(--ink-3)}
 
+/* ---------- samples page ---------- */
+.sample{border-bottom:1px solid var(--rule)}
+.sample .wrap{padding-block:2.75rem}
+.sample h2{font-size:1.5rem;line-height:1.25;margin-top:.35rem}
+.sample .intro{margin-top:.8rem;color:var(--ink-2);max-width:40rem}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.25rem;margin-top:1.6rem;align-items:start}
+.pair figure{margin:0;min-width:0}
+.pair figcaption{font-size:.8rem;color:var(--ink-3);margin-bottom:.5rem}
+.sample .doc{padding:1.3rem 1.4rem;font-size:.86rem;line-height:1.6}
+.sample .doc h3{font-family:inherit;font-size:1rem;font-weight:700;line-height:1.4;margin-bottom:.7rem}
+.sample .doc h3.ctr{text-align:center;letter-spacing:.04em}
+.sample .doc[lang="ja"]{font-family:var(--ja)}
+.sample .doc[lang|="zh"]{font-family:var(--zh)}
+.sample .doc .sec{font-weight:700;margin-top:.9rem;padding-top:.55rem;border-top:1px solid var(--doc-rule)}
+.sample .doc .cap{margin-top:.8rem;font-size:.8rem;color:var(--doc-ink-2)}
+.sample .doc sup{font-size:.65em}
+.rec{display:grid;grid-template-columns:minmax(0,max-content) minmax(0,1fr);gap:.2rem 1rem;margin:.4rem 0 0}
+.rec dt{color:var(--doc-ink-2);max-width:11rem}
+.rec dd{margin:0}
+.end-note{margin-top:.7rem;font-size:.8rem;color:var(--doc-ink-2)}
+.sign{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.6rem 1rem;margin-top:.8rem}
+.sign p{flex:1 1 14rem}
+.tr-seal{font-size:.75rem;color:var(--seal);border:1px dashed var(--seal);padding:.3rem .45rem;white-space:nowrap}
+.doc.cert{margin-top:1.25rem;max-width:44rem}
+.doc.letter{margin-top:1.6rem;max-width:44rem}
+.doc.letter ol{margin:.4rem 0 0;padding-left:1.3rem}
+.flip{display:none}
+.points.look{margin-top:1.4rem}
+.sample p.fine{margin-top:1rem;font-size:.82rem;color:var(--ink-3)}
+
 /* ---------- narrow screens ---------- */
 @media (max-width:960px){
   .qpage .wrap{grid-template-columns:minmax(0,1fr);gap:2.75rem}
 }
 @media (max-width:820px){
   .hero .wrap,.door .wrap,.svc .wrap{grid-template-columns:minmax(0,1fr);gap:2rem}
+  .pair{grid-template-columns:minmax(0,1fr)}
+  .flip{display:inline-flex;margin-top:1.4rem;border:1px solid var(--rule-strong)}
+  .flip button{font:inherit;font-size:.88rem;font-weight:500;padding:.5rem .95rem;background:transparent;color:var(--ink-2);border:0;cursor:pointer}
+  .flip button + button{border-left:1px solid var(--rule-strong)}
+  .flip button[aria-pressed="true"]{background:var(--btn);color:var(--btn-ink)}
+  .flip + .pair{margin-top:.9rem}
+  .flip + .pair figcaption{display:none}
+  .pair[data-show="en"] figure:first-child,.pair[data-show="src"] figure:last-child{display:none}
   .nav{gap:1rem;margin-left:0}
 }
 @media (max-width:760px){
