@@ -270,6 +270,13 @@ footer{border-top:1px solid var(--rule);padding-block:1.5rem 3rem;font-size:.8re
 footer .wrap{display:flex;justify-content:space-between;gap:.5rem 1.5rem;flex-wrap:wrap}
 footer a{color:var(--ink-2)}
 
+/* ---------- about page ---------- */
+.portrait{display:block;width:10rem;height:10rem;object-fit:cover;object-position:50% 30%;border:1px solid var(--rule-strong);margin-bottom:1.2rem}
+.pubs{margin:.2rem 0 0;padding:0;list-style:none;display:grid;border-bottom:1px solid var(--rule)}
+.pubs li{border-top:1px solid var(--rule);padding-block:.8rem;color:var(--ink-2);font-size:.92rem;line-height:1.5}
+.pubs cite{display:block;font-style:normal;font-weight:500;color:var(--ink);margin-bottom:.15rem}
+.pubs .src{display:block;font-size:.84rem;color:var(--ink-3)}
+
 /* ---------- narrow screens ---------- */
 @media (max-width:960px){
   .qpage .wrap{grid-template-columns:minmax(0,1fr);gap:2.75rem}
