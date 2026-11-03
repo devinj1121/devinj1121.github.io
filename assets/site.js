@@ -1,4 +1,4 @@
-// Home hero: three slides (Immigration, Patents, Workflows) fade every 8 s.
+// Home hero: two slides (Immigration, Patents) fade every 8 s.
 // No controls. With reduced motion, the first slide stays.
 (function(){
   var sl=document.querySelectorAll('.file .slide');
