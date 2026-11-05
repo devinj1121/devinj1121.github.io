@@ -108,7 +108,6 @@
         row(dl,'Languages',fd.get('pair'));
         row(dl,'For',fd.get('use'));
         row(dl,'Files',picked.length?picked.length+' attached':'None yet');
-        row(dl,'Degree evaluation',fd.get('eval')?'Yes':'');
         var n=(fd.get('notes')||'').trim();
         row(dl,'Notes',n.length>120?n.slice(0,120)+'…':n);
       }else{

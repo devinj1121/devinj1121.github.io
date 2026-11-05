@@ -1,0 +1,177 @@
+/* Case-page styles (Mock B): running case, chapters, price tables. Used by the service pages. */
+.blk{border-bottom:1px solid var(--rule)}
+.blk>.wrap{padding-block:3.25rem}
+.blk h2{font-size:1.3rem;line-height:1.25;margin-top:.35rem;max-width:40rem}
+.blk .intro{margin-top:.7rem;color:var(--ink-2);max-width:40rem}
+.blk .stage{margin-top:1.8rem}
+.blk.tint{background:var(--sheet)}
+.line{margin-top:1.4rem;display:flex;flex-wrap:wrap;gap:.3rem 1.6rem;font-size:.92rem;color:var(--ink-2)}
+.line b{color:var(--ink);font-weight:600}
+.line a{color:var(--ink)}
+
+/* the work, shown big */
+.wide .doc{padding:1.4rem 1.6rem;font-size:.9rem;line-height:1.65}
+.wide.callout{padding-bottom:0}
+.pagepair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.2rem}
+.pagepair .doc{padding:1.2rem 1.3rem;font-size:.84rem;line-height:1.6}
+.pagepair .doc[lang=ja]{font-family:var(--ja)}
+.pagepair .lab{font:700 .66rem/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--doc-ink-2);margin-bottom:.7rem}
+.fig{margin-top:.7rem;border:1px solid var(--doc-rule);background:var(--doc-tint);height:4.2rem;display:grid;place-items:center;font-size:.72rem;color:var(--doc-ink-2)}
+.tbl{width:100%;border-collapse:collapse;margin-top:.6rem;font-size:.74rem}
+.tbl td{border:1px solid var(--doc-rule);padding:.2rem .4rem}
+.letter{max-width:44rem;padding:1.6rem 1.8rem;font-family:var(--serif);font-size:.95rem;line-height:1.7}
+.letter p+p{margin-top:.8rem}
+.letter .s{font-family:var(--sans);font-size:.75rem}
+.letter .hl{box-shadow:inset 0 -.45em 0 rgba(255,255,255,.16)}
+
+/* pull quote */
+.pq{margin:0;padding:0 0 0 1.4rem;border-left:3px solid var(--accent);max-width:46rem}
+.pq p{font-family:var(--serif);font-size:clamp(1.4rem,2.6vw,1.95rem);line-height:1.3;color:var(--ink)}
+.pq footer{border:0;padding:0;margin-top:.8rem;font-size:.85rem;color:var(--ink-3)}
+
+/* credentials strip */
+.creds{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:1.6rem}
+.creds div{padding:1rem 1rem 1rem 0}
+.creds div+div{padding-left:1.2rem;border-left:1px solid var(--rule)}
+.creds b{display:block;font-family:var(--serif);font-size:1.15rem;font-weight:600}
+.creds span{font-size:.85rem;color:var(--ink-3)}
+
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem;padding:0;list-style:none}
+.chips li{border:1px solid var(--rule-strong);padding:.3rem .7rem;font-size:.86rem;color:var(--ink-2)}
+.chips [lang]{color:var(--ink)}
+
+/* one price table */
+.prices{width:100%;border-collapse:collapse;margin-top:1.4rem;font-size:.95rem}
+.prices th,.prices td{text-align:left;padding:.75rem .6rem .75rem 0;border-bottom:1px solid var(--rule);vertical-align:top}
+.prices thead th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:600;border-bottom-color:var(--rule-strong)}
+.prices td.p{font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
+.prices td.e{color:var(--ink-3);font-size:.88rem}
+.prices tbody th{font-weight:500}
+.prices tbody th small{display:block;font-weight:400;color:var(--ink-3);font-size:.82rem}
+
+/* promise strip */
+.promise{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin-top:1.4rem;border-top:1px solid var(--rule-strong)}
+.promise div{padding:1rem 1rem 0 0;font-size:.88rem;color:var(--ink-2)}
+.promise div+div{padding-left:1rem;border-left:1px solid var(--rule)}
+.promise b{display:block;color:var(--ink);font-size:.95rem;margin-bottom:.2rem}
+
+/* two-column FAQ */
+.faq2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 2.5rem;margin-top:1.2rem}
+
+/* running case: chapters on a line */
+.case{position:relative;margin-top:2rem}
+.chap{display:grid;grid-template-columns:3rem minmax(0,1fr);gap:1.2rem;padding-bottom:3.25rem;position:relative}
+.chap::before{content:"";position:absolute;left:1.05rem;top:2.4rem;bottom:0;width:1px;background:var(--rule-strong)}
+.chap:last-child::before{display:none}
+.chap .no{width:2.2rem;height:2.2rem;border-radius:50%;border:1.5px solid var(--accent);display:grid;place-items:center;font:600 .95rem/1 var(--serif);color:var(--accent);background:var(--paper)}
+.chap h3{font-size:1.12rem;line-height:1.3}
+.chap .sv{font-size:.82rem;color:var(--accent);font-weight:500;margin-bottom:.2rem}
+.chap .txt{margin-top:.5rem;color:var(--ink-2);max-width:40rem}
+.chap .stage{margin-top:1.3rem}
+.chap .cost{margin-top:1rem;font-size:.88rem;color:var(--ink-3)}
+.chap .cost b{color:var(--ink);font-weight:600}
+.who-card{display:grid;grid-template-columns:auto minmax(0,1fr);gap:1.2rem;align-items:center;margin-top:1.6rem;padding:1.1rem 1.2rem;border:1px solid var(--rule-strong);background:var(--sheet);max-width:40rem}
+.who-card .av{width:3.2rem;height:3.2rem;border-radius:50%;border:1.5px solid var(--ink-3);display:grid;place-items:center;font:600 1rem/1 var(--serif);color:var(--ink-2)}
+.who-card b{display:block}
+.who-card span{color:var(--ink-2);font-size:.9rem}
+.bill{max-width:34rem;margin-top:1.4rem}
+.bill .total td,.bill .total th{border-top:1px solid var(--rule-strong);font-weight:700}
+
+@media (max-width:760px){
+  .pagepair,.faq2,.creds{grid-template-columns:minmax(0,1fr)}
+  .creds div+div{padding-left:0;border-left:0;border-top:1px solid var(--rule)}
+  .promise{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .promise div+div{border-left:0;padding-left:0}
+  .chap{grid-template-columns:2.4rem minmax(0,1fr);gap:.8rem}
+  .prices td.e{display:none}
+}
+
+/* B v2: case switch + quick links */
+.sw{display:inline-flex;border:1px solid var(--rule-strong);margin-top:.8rem}
+.sw button{font:inherit;font-size:.9rem;font-weight:500;padding:.45rem .9rem;background:transparent;color:var(--ink-2);border:0;cursor:pointer}
+.sw button+button{border-left:1px solid var(--rule-strong)}
+.sw button[aria-pressed="true"]{background:var(--btn);color:var(--btn-ink)}
+.sw button:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.who-card.v2{grid-template-columns:minmax(0,1fr);gap:0;max-width:44rem}
+.who-card .row{display:grid;grid-template-columns:auto minmax(0,1fr);gap:1rem;align-items:center;margin-top:1rem}
+.jump2{display:flex;flex-wrap:wrap;gap:.3rem 1.2rem;margin-top:1.4rem;font-size:.88rem;color:var(--ink-3)}
+.jump2 a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--rule-strong)}
+.jump2 a:hover{color:var(--accent);border-color:var(--accent)}
+.chap .steps{grid-template-columns:repeat(4,minmax(0,1fr));gap:1.6rem;padding:0;margin-top:1.4rem}
+.chap .steps .ic{height:5.2rem}
+.chap .steps svg{width:4.4rem;height:3.5rem}
+.chap .steps li+li::before{left:-1.3rem;top:2.6rem;width:1rem}
+.chap .steps li+li::after{left:-.5rem;top:calc(2.6rem - 4px)}
+.pagepair .doc[lang|=zh]{font-family:var(--zh)}
+@media (max-width:760px){.chap .steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ex{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--shu);border:1px solid var(--shu);padding:.1rem .45rem;margin-bottom:.5rem}
+
+/* case cover sheet */
+.casefile{margin-top:2rem;max-width:36rem}
+.ctabs{display:flex;border:0;margin:0;gap:.25rem}
+.ctabs button{border:1px solid var(--rule-strong);border-bottom:0;padding:.45rem 1rem;background:var(--sheet);color:var(--ink-2)}
+.ctabs button+button{border-left:1px solid var(--rule-strong)}
+.ctabs button[aria-pressed="true"]{background:var(--doc);color:var(--doc-ink);border-color:var(--doc)}
+.cover{position:relative;padding:1.2rem 1.4rem 1rem;font-size:.9rem}
+.cover dl{display:grid;grid-template-columns:6.5rem minmax(0,1fr);margin:.8rem 0 0}
+.cover dt,.cover dd{padding-block:.45rem;border-top:1px solid var(--doc-rule)}
+.cover dt{color:var(--doc-ink-2);font-size:.8rem}
+.cover dd{margin:0;font-weight:500}
+.cover .note{margin-top:.7rem;font-size:.75rem}
+.stamp{position:absolute;top:.9rem;right:1.1rem;transform:rotate(-6deg);border:2px solid var(--seal);color:var(--seal);font:700 .72rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;padding:.35rem .55rem;opacity:.85}
+@media (max-width:480px){.cover dl{grid-template-columns:minmax(0,1fr)}.cover dt{border-top:1px solid var(--doc-rule);padding-bottom:0}.cover dd{border-top:0;padding-top:.1rem}}
+.phead2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,26rem);gap:1rem 3rem;align-items:end}
+.phead2 .casefile{margin-top:0}
+.phead2 .jump2{grid-column:1/-1;margin-top:1rem}
+@media (max-width:900px){.phead2{grid-template-columns:minmax(0,1fr)}.phead2 .casefile{margin-top:1rem}}
+
+/* patents: reference sorting sheet, notes, declaration */
+.triage{max-width:44rem;padding:1.2rem 1.4rem;font-size:.86rem}
+.triage table{width:100%;border-collapse:collapse;margin-top:.7rem}
+.triage th,.triage td{text-align:left;padding:.45rem .4rem .45rem 0;border-top:1px solid var(--doc-rule);vertical-align:top}
+.triage thead th{font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--doc-ink-2);border-top:0}
+.triage .go{color:#1d6b45;font-weight:600}
+.triage .fam{color:#b0b0b0;font-weight:600}
+.triage .skip{color:var(--doc-ink-3)}
+.triage tr.more td{color:var(--doc-ink-3);font-style:italic}
+.chap .vs{margin-top:0}
+.chap .vsnotes{margin-top:1.2rem}
+.chap .src{margin-top:.8rem;font-size:.8rem;color:var(--ink-3)}
+.decl{max-width:44rem;padding:1.3rem 1.5rem;font-size:.88rem;line-height:1.65}
+.decl p+p{margin-top:.6rem}
+
+/* summary at the top: one cell per chapter */
+.glance{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:0}
+.glance a{display:block;color:inherit;text-decoration:none}
+.glance a:hover b{color:var(--accent)}
+.glance .no2{font:600 .8rem/1 var(--serif);color:var(--accent);margin-right:.35rem}
+@media (max-width:760px){.glance{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+
+/* page head: price summary on the right */
+.hsum{border:1px solid var(--rule-strong);background:var(--sheet);padding:1.1rem 1.3rem}
+.hsum-t{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.hsum .menu{margin-top:.4rem}
+.hsum .menu a{color:inherit;text-decoration:none;border-bottom:1px solid var(--rule-strong)}
+.hsum .menu a:hover{color:var(--accent);border-color:var(--accent)}
+.hsum .fine{margin-top:.8rem}
+.casefile-in{margin-top:1.4rem;margin-bottom:2.5rem}
+.chap .cost a{color:var(--ink-2)}
+
+/* step 4: term sheet */
+.termsheet{max-width:40rem;padding:1.1rem 1.3rem;font-size:.84rem}
+.termsheet .tbl{font-size:.8rem}
+.termsheet .tbl tr:first-child td{font-weight:700;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--doc-ink-2)}
+.termsheet .tbl td[lang|=zh]{font-family:var(--zh)}
+.termsheet .s{margin-top:.6rem;font-size:.72rem}
+
+/* price table: room between columns */
+.prices th,.prices td{padding-right:2rem}
+.prices td.e{padding-right:0}
+
+/* the bill: muted labels, step number in a circle, prices right-aligned */
+.bill tbody th{font-weight:400;color:var(--ink-2)}
+.bill td.p{text-align:right;padding-right:0;color:var(--ink)}
+.bill .bn{display:inline-grid;place-items:center;width:1.3rem;height:1.3rem;margin-right:.7rem;border:1px solid var(--rule-strong);border-radius:50%;font:600 .7rem/1 var(--serif);color:var(--ink-3);vertical-align:.1em}
+.bill .total th{color:var(--ink);font-weight:700}
+.bill{max-width:42rem}

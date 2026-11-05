@@ -5,29 +5,29 @@
    white text, pale ice-blue highlights, light buttons. Documents in drawings stay paper-white.
    Seal red is only for seals, stamps and marks on documents. One dark look for every viewer. */
 :root{
-  --paper:#15181b;
-  --sheet:#1c2125;
-  --ink:#eef2f4;
-  --ink-2:#b4bdc4;
-  --ink-3:#88929b;
-  --rule:#2b3237;
-  --rule-strong:#55606a;
-  --tint:#20262b;
-  --accent:#8fcbe6;
-  --btn:#e4ebf1;
-  --btn-ink:#1f2930;
+  --paper:#141414;
+  --sheet:#1c1c1c;
+  --ink:#f0f0f0;
+  --ink-2:#bdbdbd;
+  --ink-3:#8c8c8c;
+  --rule:#2b2b2b;
+  --rule-strong:#555555;
+  --tint:#202020;
+  --accent:#d6d6d6;
+  --btn:#ececec;
+  --btn-ink:#1a1a1a;
   --btn-hover:#ffffff;
   --shu:#e0664c;
   --shu-soft:rgba(224,102,76,.12);
-  --focus:#8fcbe6;
+  --focus:#d6d6d6;
   --ok:#7fd1a6;
-  --shadow:0 1px 2px rgba(0,0,0,.35),0 14px 34px rgba(0,0,0,.4);
-  --doc:#f4f6f7;
-  --doc-ink:#1b1f22;
-  --doc-ink-2:#4b5359;
-  --doc-ink-3:#78818a;
-  --doc-rule:#d9dee1;
-  --doc-tint:#e9edef;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.45);
+  --doc:#232323;
+  --doc-ink:#ececec;
+  --doc-ink-2:#b3b3b3;
+  --doc-ink-3:#8a8a8a;
+  --doc-rule:#3a3a3a;
+  --doc-tint:#2e2e2e;
   --sans:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
   --serif:"IBM Plex Serif",Georgia,serif;
   --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
@@ -40,7 +40,7 @@
 [hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%}
 @media (prefers-reduced-motion: no-preference){html{scroll-behavior:smooth}}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6}
 a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.22em}
 a:hover{color:var(--accent)}
 :focus-visible{outline:2px solid var(--focus);outline-offset:2px}
@@ -82,7 +82,7 @@ section[id]{scroll-margin-top:1rem}
 .doc p+p{margin-top:.45rem}
 .doc .t{font-weight:700;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--doc-ink)}
 .doc .s{color:var(--doc-ink-2)}
-.doc mark{background:none;color:inherit;box-shadow:inset 0 -.45em 0 rgba(143,203,230,.45)}
+.doc mark{background:none;color:inherit;box-shadow:inset 0 -.45em 0 rgba(255,255,255,.16)}
 .doc .lines{display:grid;gap:.4rem;margin-top:.7rem}
 .doc .lines i{display:block;height:.32rem;background:var(--doc-tint)}
 .doc .lines i:nth-child(2){width:82%} .doc .lines i:nth-child(3){width:58%}
@@ -95,7 +95,7 @@ section[id]{scroll-margin-top:1rem}
 /* hero */
 .hero{padding-block:3rem}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:3.5rem;align-items:center}
-.hero h1{font-size:clamp(1.7rem,3vw,2.3rem);line-height:1.22}
+.hero h1{font-size:clamp(1.45rem,2.4vw,1.85rem);line-height:1.22}
 .hero .lede{margin-top:1rem;color:var(--ink-2);max-width:32rem}
 .ctas{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.6rem}
 
@@ -104,7 +104,7 @@ section[id]{scroll-margin-top:1rem}
 .lk{font-size:.75rem;color:var(--ink-3);margin-bottom:.6rem}
 .lv{display:flex;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .lt{display:flex;align-items:center;gap:2.5rem;margin:0;padding:0 2.5rem 0 0;list-style:none;flex:none;animation:lscroll 28s linear infinite}
-.lt li{white-space:nowrap;color:#9aa5ae;line-height:1.1;font-family:var(--serif);font-weight:500;font-size:1.05rem}
+.lt li{white-space:nowrap;color:#9a9a9a;line-height:1.1;font-family:var(--serif);font-weight:500;font-size:1.05rem}
 .lt small{font-size:1em}
 @keyframes lscroll{to{transform:translateX(-100%)}}
 @media (prefers-reduced-motion: reduce){
@@ -141,7 +141,7 @@ section[id]{scroll-margin-top:1rem}
 .door{border-bottom:1px solid var(--rule)}
 .door .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:3rem;align-items:center;padding-block:2.75rem}
 .who{font-size:.85rem;color:var(--accent);font-weight:500;letter-spacing:.02em}
-.door h2{font-size:1.6rem;line-height:1.25;margin-top:.35rem}
+.door h2{font-size:1.3rem;line-height:1.25;margin-top:.35rem}
 .door .sub{margin-top:.6rem;color:var(--ink-2)}
 .menu{margin:1.3rem 0 0;padding:0;list-style:none;max-width:27rem;display:grid;border-bottom:1px solid var(--rule)}
 .menu li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-block:.6rem;border-top:1px solid var(--rule)}
@@ -174,7 +174,7 @@ section[id]{scroll-margin-top:1rem}
 
 /* ---------- SERVICE PAGES (immigration, later patents) ---------- */
 .phead{padding-block:3rem 2.5rem;border-bottom:1px solid var(--rule)}
-.phead h1{font-size:clamp(1.7rem,3vw,2.3rem);line-height:1.22;margin-top:.35rem;max-width:40rem}
+.phead h1{font-size:clamp(1.45rem,2.4vw,1.85rem);line-height:1.22;margin-top:.35rem;max-width:40rem}
 .phead .lede{margin-top:1rem;color:var(--ink-2);max-width:38rem}
 .jump{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin:1.4rem 0 0;padding:0;list-style:none;font-size:.9rem}
 .jump a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--rule-strong)}
@@ -201,7 +201,7 @@ section[id]{scroll-margin-top:1rem}
 /* ---------- QUOTE PAGE ---------- */
 .qpage{padding-block:3rem 5rem}
 .qpage .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,31rem);gap:4.5rem;align-items:start}
-.qpage h1{font-size:clamp(1.7rem,2.9vw,2.3rem);line-height:1.2}
+.qpage h1{font-size:clamp(1.45rem,2.4vw,1.85rem);line-height:1.2}
 .qpage .intro{margin-top:.9rem;color:var(--ink-2);max-width:28rem}
 .next{margin:2.25rem 0 0;padding:0;list-style:none;border-left:1px solid var(--rule);display:grid;gap:1.4rem}
 .next li{position:relative;padding-left:1.5rem}
@@ -343,7 +343,7 @@ footer a{color:var(--ink-2)}
 .vs .lab{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.5rem;color:var(--doc-ink-2);font-family:var(--sans)}
 .vs .later{margin-top:.7rem;padding-top:.6rem;border-top:1px solid var(--doc-rule)}
 .mt-bad{background:rgba(192,58,36,.12);box-shadow:inset 0 -2px 0 #c03a24}
-.mt-good{background:rgba(143,203,230,.35);box-shadow:inset 0 -2px 0 #2f7fa6}
+.mt-good{background:rgba(255,255,255,.14);box-shadow:inset 0 -2px 0 #9a9a9a}
 .num{display:inline-grid;place-items:center;width:1.05rem;height:1.05rem;border-radius:50%;background:#1b1f22;color:#fff;font:700 .6rem/1 var(--sans);vertical-align:.2em;margin-left:.15rem}
 .vsnotes{list-style:none;padding:0;margin:1.2rem 0 0;display:grid;gap:.6rem;max-width:46rem;color:var(--ink-2);font-size:.9rem}
 .vsnotes li{display:grid;grid-template-columns:1.6rem 1fr;align-items:start}
@@ -372,7 +372,7 @@ footer a{color:var(--ink-2)}
 .steps .red{stroke:var(--shu)}
 .steps b{display:block;margin-top:.8rem;font-size:.95rem}
 .steps span{display:block;color:var(--ink-3);font-size:.82rem}
-.tip{position:relative;cursor:help;border-bottom:2px dotted #2f7fa6;outline-offset:2px}
+.tip{position:relative;cursor:help;border-bottom:2px dotted #9a9a9a;outline-offset:2px}
 .tip .pop{position:absolute;left:0;top:calc(100% + .5rem);width:17rem;max-width:70vw;background:var(--sheet);color:var(--ink-2);border:1px solid var(--rule-strong);padding:.6rem .75rem;font:400 .78rem/1.5 var(--sans);box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .15s;z-index:3}
 .tip:hover .pop,.tip:focus .pop{opacity:1}
 @media (max-width:760px){
