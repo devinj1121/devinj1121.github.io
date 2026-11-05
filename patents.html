@@ -47,7 +47,7 @@
 <section class="phead"><div class="wrap">
   <p class="who">For patent litigators and reexam requesters</p>
   <h1>Japanese and Chinese prior art, translated to hold up in a patent dispute.</h1>
-  <p class="lede">For court, reexam and the PTAB. A trained patent translator leads the work, in software, AI and electronics.</p>
+  <p class="lede">We translate software, AI and electronics prior art for court, reexam and the PTAB. A trained patent translator does every translation.</p>
   <div class="ctas"><a class="btn primary" href="quote.html">Get a quote</a><a class="btn ghost" href="samples.html#prior-art">See a sample</a></div>
 </div></section>
 
@@ -59,7 +59,7 @@
       <span class="stamp" aria-label="Fictional">Fictional</span>
       <dl>
         <dt>Proceeding</dt><dd>Inter partes review at the PTAB</dd>
-        <dt>Patent</dt><dd>A US patent on machine translation that uses a term list</dd>
+        <dt>Patent</dt><dd>A US patent on detecting faults in sensor data with a trained model</dd>
         <dt>Search</dt><dd>12 Japanese and Chinese references</dd>
         <dt>Deadline</dt><dd>Petition due in 6 weeks</dd>
       </dl>
@@ -74,7 +74,7 @@
     <div>
       <p class="sv">Sorting references</p>
       <h3>Twelve references in. Three worth translating.</h3>
-      <p class="txt">We read each reference against the claims and say which bear on them. If one has an English family member, we point it out. Counsel decides.</p>
+      <p class="txt">We read each reference against the claims and say which bear on them. If one has an English family member, we point it out. You decide.</p>
       <div class="stage doc triage">
         <p class="t">References against claims 1&ndash;9</p>
         <table>
@@ -98,30 +98,29 @@
     <div>
       <p class="sv">Translation</p>
       <h3>Each sentence reads fine in machine English. As a claim, it breaks.</h3>
-      <p class="txt">Claim 1 of the first reference, put through Google Translate, next to ours. Claims keep one element per line. Paragraph numbers and reference numerals stay. A term gets the same English in every reference.</p>
+      <p class="txt">Here is claim 1 and paragraph [0015] of the first reference, in Google Translate&rsquo;s English and in ours. Claims keep one element per line. Paragraph numbers and reference numerals stay. A term gets the same English in every reference.</p>
       <div class="stage vs">
         <div class="doc" lang="ja">
           <p class="lab">Japanese</p>
-          原文を取得する取得部と、用語と当該用語の訳語とを対応付けて記憶する用語記憶部と、前記原文に含まれる用語を前記用語記憶部から検索する検索部と、前記検索部により検索された用語の訳語が訳文に含まれるように、前記原文を翻訳する翻訳部と、を備える翻訳装置。
-          <p class="later"><span class="lab">Paragraph [0012]</span><br>検索部13により検索された用語の訳語を制約条件として&hellip;</p>
+          センサから計測値を取得する取得部と、前記計測値から特徴量を算出する算出部と、学習済みモデルを用いて前記特徴量から異常度を推定する推定部と、前記異常度が閾値を超えた場合に警報を出力する出力部と、を備える異常検知装置。
+          <p class="later"><span class="lab">Paragraph [0015]</span><br>推定部14は、算出部13が算出した特徴量を学習済みモデルに入力し、当該特徴量の異常度を推定する。異常度が高いほど、計測値が正常時の分布から外れていることを示す。</p>
         </div>
         <div class="doc">
           <p class="lab">Google Translate</p>
-          <span class="mt-bad">The</span><span class="num">1</span> translation apparatus comprises: an acquisition unit that obtains <span class="mt-bad">a translation</span><span class="num">3</span>; a terminology storage unit that stores terms in association with their corresponding <span class="mt-bad">translations</span><span class="num">3</span>; a search unit that searches the terminology storage unit for <span class="mt-bad">terms</span><span class="num">2</span> contained in <span class="mt-bad">the original text</span><span class="num">1</span>; and a translation unit that generates <span class="mt-bad">a translation</span><span class="num">3</span> such that the translations of the terms <span class="mt-bad">found</span><span class="num">3</span> by the search unit are included in the translated text.
-          <p class="later"><span class="lab">Paragraph [0012]</span><br>&hellip;with the translations of the terms <span class="mt-bad">retrieved</span><span class="num">3</span> by the search unit 13 serving as a constraint.</p>
+          An anomaly detection device comprising: an acquisition unit that obtains <span class="mt-bad">measurement values</span><span class="num">1</span> from a sensor; a calculation unit that computes <span class="mt-bad">feature values</span><span class="num">1</span> from said measurement values; an estimation unit that estimates <span class="mt-bad">an anomaly score</span><span class="num">2</span> from said feature values using a trained model; and an output unit that issues an alarm when said anomaly score exceeds a threshold value.
+          <p class="later"><span class="lab">Paragraph [0015]</span><br>The estimation unit 14 inputs the feature values calculated by the calculation unit 13 into a trained model and estimates <span class="mt-bad">the degree of anomaly</span><span class="num">2</span> for those feature values. A higher degree of anomaly indicates that the <span class="mt-bad">measured values</span><span class="num">2</span> deviate from the distribution observed under normal conditions.</p>
         </div>
         <div class="doc">
           <p class="lab">Sen Linguistics</p>
-          <span class="mt-good">A</span><span class="num">1</span> translation device comprising: an acquisition unit that acquires <span class="mt-good">a source text</span><span class="num">3</span>; a term storage unit that stores terms in association with <span class="mt-good">equivalents</span><span class="num">3</span> of the terms; a search unit that searches the term storage unit for <span class="mt-good">a term</span><span class="num">2</span> included in <span class="mt-good">the source text</span><span class="num">1</span>; and a translation unit that translates the source text such that the equivalent of the term <span class="mt-good">found</span><span class="num">3</span> by the search unit is included in a translated text.
-          <p class="later"><span class="lab">Paragraph [0012]</span><br>&hellip;using the equivalent of the term <span class="mt-good">found</span><span class="num">3</span> by the search unit 13 as a constraint.</p>
+          An anomaly detection device comprising: an acquisition unit that acquires <span class="mt-good">a measured value</span><span class="num">1</span> from a sensor; a calculation unit that calculates <span class="mt-good">a feature value</span><span class="num">1</span> from the measured value; an estimation unit that estimates <span class="mt-good">a degree of anomaly</span><span class="num">2</span> from the feature value using a trained model; and an output unit that outputs an alarm when the degree of anomaly exceeds a threshold.
+          <p class="later"><span class="lab">Paragraph [0015]</span><br>The estimation unit 14 inputs the feature value calculated by the calculation unit 13 into the trained model and estimates <span class="mt-good">the degree of anomaly</span><span class="num">2</span> of the feature value. A higher degree of anomaly indicates that <span class="mt-good">the measured value</span><span class="num">2</span> deviates further from the distribution in a normal state.</p>
         </div>
       </div>
       <ol class="vsnotes">
-        <li><span class="num">1</span><span><b>&ldquo;A&rdquo; and &ldquo;the&rdquo;.</b> In a claim, &ldquo;a&rdquo; introduces something and &ldquo;the&rdquo; points back to it. Google starts with &ldquo;The&rdquo;, which points back to nothing.</span></li>
-        <li><span class="num">2</span><span><b>Plurals.</b> Japanese doesn&rsquo;t mark them. Google&rsquo;s &ldquo;terms&rdquo; changes what the claim covers.</span></li>
-        <li><span class="num">3</span><span><b>Consistency.</b> Google uses &ldquo;translation&rdquo; for three different things, and &ldquo;found&rdquo; becomes &ldquo;retrieved&rdquo; in paragraph [0012].</span></li>
+        <li><span class="num">1</span><span><b>Plurals.</b> Japanese doesn&rsquo;t mark them. The claim covers one measured value and one feature value. Google&rsquo;s plurals could be read as requiring several, which changes what the claim covers.</span></li>
+        <li><span class="num">2</span><span><b>Consistency.</b> Google calls <span lang="ja">異常度</span> &ldquo;an anomaly score&rdquo; in the claim and &ldquo;the degree of anomaly&rdquo; in paragraph [0015]. <span lang="ja">計測値</span> becomes &ldquo;measurement values&rdquo;, then &ldquo;measured values&rdquo;. The other side can argue that each pair means two different things.</span></li>
       </ol>
-      <p class="src">Google Translate output, 3 November 2026, unedited.</p>
+      <p class="src">Google Translate output, 5 November 2026, unedited.</p>
       <p class="cost">Cost in this case: 3 references, about 27,000 words, <b>about $8,100</b>. <a href="samples.html#prior-art">See a full sample</a></p>
     </div>
   </div>
@@ -131,11 +130,11 @@
     <div>
       <p class="sv">Notes for counsel</p>
       <h3>Terms the other side could dispute, flagged first</h3>
-      <p class="txt">The other side will check every word of the English. Notes cover language only. Claim construction stays with counsel.</p>
+      <p class="txt">The other side will check every word of the English. Notes cover language only. Claim construction stays with you.</p>
       <div class="stage doc decl">
         <p class="t">Notes for counsel &middot; JP 2019-000001 A</p>
-        <p>1. <span lang="ja">訳語</span> (claim 1, paragraph [0012]): rendered &ldquo;equivalent&rdquo;, to keep it apart from <span lang="ja">訳文</span> (&ldquo;translated text&rdquo;). Both could be read as &ldquo;translation&rdquo;.</p>
-        <p>2. <span lang="ja">復号</span> (paragraph [0018]): rendered &ldquo;decoding&rdquo;. In cryptography the word means &ldquo;decryption&rdquo;. Here it refers to a translation model generating output, for which the standard English term is &ldquo;decoding&rdquo;.</p>
+        <p>1. <span lang="ja">異常度</span> (claim 1, paragraphs [0015]&ndash;[0021]): rendered &ldquo;degree of anomaly&rdquo; throughout. &ldquo;Anomaly score&rdquo; is common in the field, but a score suggests a number on a fixed scale. The reference doesn&rsquo;t say the value has one.</p>
+        <p>2. <span lang="ja">特徴量</span> (claim 1, paragraph [0015]): rendered &ldquo;a feature value&rdquo;, singular. The Japanese doesn&rsquo;t mark number. Paragraph [0016] calculates one value from each measurement.</p>
         <p class="s">Fictional reference.</p>
       </div>
       <p class="cost">Cost in this case: <b>included</b>.</p>
@@ -147,10 +146,10 @@
     <div>
       <p class="sv">Declaration</p>
       <h3>A signed declaration, as the PTAB requires</h3>
-      <p class="txt">37 CFR 42.63(b). If the other side wants to depose the translator, that&rsquo;s available by the hour.</p>
+      <p class="txt">The rule is 37 CFR 42.63(b). If the other side wants to depose the translator, you can book that by the hour.</p>
       <div class="stage doc decl">
         <p class="t">Declaration of translator</p>
-        <p>I, Devin Johnson, declare that I am fluent in Japanese and English and competent to translate from Japanese into English, and that the attached English translation of JP 2019-000001 A is complete and accurate to the best of my knowledge and belief. I declare under penalty of perjury under the laws of the United States of America that the foregoing is true and correct.</p>
+        <p>I, [Translator], declare that I am fluent in Japanese and English and competent to translate from Japanese into English, and that the attached English translation of JP 2019-000001 A is complete and accurate to the best of my knowledge and belief. I declare under penalty of perjury under the laws of the United States of America that the foregoing is true and correct.</p>
         <p class="s">Executed on [date] &middot; Signature</p>
       </div>
       <p class="cost">Cost in this case: <b>included</b>, one per reference.</p>
@@ -171,20 +170,20 @@
       <tr class="total"><th>Total, plus sorting</th><td class="p">about $8,100</td></tr>
     </tbody>
   </table>
-  <p class="line"><span>Your matter gets one fixed quote before any work starts.</span></p>
+  <p class="line"><span>Your matter gets one fixed quote before any work starts.</span><span>For a reexam request, we translate only the parts you mark, so the bill is smaller.</span></p>
 
   <h2 style="margin-top:3rem">All prices</h2>
   <table class="prices">
     <thead><tr><th>Service</th><th>Price</th><th>Notes</th></tr></thead>
     <tbody>
       <tr><th>Prior art for court or the PTAB<small>The full reference, with notes for counsel and a signed declaration (37 CFR 42.63(b) at the PTAB)</small></th><td class="p">$0.30 / word</td><td class="e">Minimum $250</td></tr>
-      <tr><th>Prior art for reexam<small>The parts counsel marks, with notes for counsel. Declaration on request (37 CFR 1.510(b)(3))</small></th><td class="p">$0.30 / word</td><td class="e">Minimum $250</td></tr>
+      <tr><th>Prior art for reexam<small>The parts you mark, with notes for counsel. Declaration on request (37 CFR 1.510(b)(3))</small></th><td class="p">$0.30 / word</td><td class="e">Minimum $250</td></tr>
       <tr><th>Sorting references against the claims</th><td class="p">quoted with the matter</td><td class="e">English family members pointed out</td></tr>
       <tr><th>Rush<small>Delivery within 2 business days</small></th><td class="p">+50%</td><td class="e">No 24-hour orders</td></tr>
       <tr><th>Translator deposition</th><td class="p">hourly</td><td class="e">On request</td></tr>
     </tbody>
   </table>
-  <p class="line"><span>Fields: <b>software and computer systems</b>, <b>AI, machine learning and NLP</b>, <b>electronics</b>. Others, such as pharmaceuticals or chemistry, are turned down before work starts.</span></p>
+  <p class="line"><span>Fields: <b>software and computer systems</b>, <b>AI, machine learning and NLP</b>, <b>electronics</b>. We translate PCT patentability reports in every field. For a dispute, we take only these three, because in them we can tell whether the English makes technical sense. References in other fields, such as pharmaceuticals or chemistry, are turned down before work starts.</span></p>
 </div></section>
 
 <section class="blk"><div class="wrap">
@@ -202,12 +201,12 @@
   <h2>Questions</h2>
   <div class="faq faq2">
     <div>
-      <details><summary>What if a reference has an English family member?</summary><p>We&rsquo;ll point it out. Counsel decides whether it can stand in for a translation.</p></details>
+      <details><summary>What if a reference has an English family member?</summary><p>We&rsquo;ll point it out. You decide whether it can stand in for a translation.</p></details>
       <details><summary>Can you meet a filing deadline?</summary><p>Give the filing date with your quote request. Delivery within 2 business days adds 50%. There are no 24-hour orders.</p></details>
     </div>
     <div>
-      <details><summary>Do you take pharmaceutical or chemistry patents?</summary><p>No. Only software, AI and electronics. We say so before any work starts.</p></details>
-      <details><summary>Do you give legal advice?</summary><p>No. The notes for counsel cover language only. Claim construction stays with counsel.</p></details>
+      <details><summary>Why only software, AI and electronics?</summary><p>We translate PCT patentability reports in every field. In a dispute, though, every term can be challenged. We take only references where we can judge whether the technology described makes sense. A reference in another field, such as pharmaceuticals or chemistry, is turned down before any work starts.</p></details>
+      <details><summary>Do you give legal advice?</summary><p>No. The notes for counsel cover language only. Claim construction stays with you.</p></details>
     </div>
   </div>
 </div></section>
