@@ -195,3 +195,12 @@
 .report [lang=ja]{font-family:var(--ja)}
 .report .s{margin-top:.9rem;font-size:.72rem}
 @media (max-width:480px){.plan dl{grid-template-columns:minmax(0,1fr)}.plan dd{border-top:0;padding-top:.1rem}}
+
+/* bottom of service pages: software note reads as a footnote, CTA reads as the end */
+.blk:has(+.side){border-bottom:0}
+.blk.side>.wrap{padding-block:0 3.25rem}
+.blk.side h2{font-family:var(--sans);font-size:1rem;font-weight:600}
+.blk.side .intro,.blk.side .line{font-size:.88rem}
+.faq2 details:last-child{border-bottom:0}
+.cta{padding-block:4.5rem 5rem}
+.cta h2{font-size:1.9rem;max-width:42rem}
