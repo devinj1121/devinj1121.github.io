@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css?v=20261105g">
-<link rel="stylesheet" href="assets/case.css?v=20261105k">
+<link rel="stylesheet" href="assets/case.css?v=20261105l">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -172,17 +172,16 @@
   <p class="line"><span>Your matter gets one fixed quote before any work starts.</span><span>For a reexam request, we translate only the parts you mark, so the bill is smaller.</span></p>
 
   <h2 style="margin-top:3rem">All prices</h2>
-  <table class="prices">
-    <thead><tr><th>Service</th><th>Price</th><th>Notes</th></tr></thead>
+  <table class="prices compact">
     <tbody>
-      <tr><th>Prior art for court or the PTAB<small>The full reference, with notes for counsel and a signed declaration (37 CFR 42.63(b) at the PTAB)</small></th><td class="p">$0.30 / word</td><td class="e">Minimum $250</td></tr>
-      <tr><th>Prior art for reexam<small>The parts you mark, with notes for counsel. Declaration on request (37 CFR 1.510(b)(3))</small></th><td class="p">$0.30 / word</td><td class="e">Minimum $250</td></tr>
-      <tr><th>Sorting references against the claims</th><td class="p">quoted with the matter</td><td class="e">English family members pointed out</td></tr>
-      <tr><th>Rush<small>Delivery within 2 business days</small></th><td class="p">+50%</td><td class="e">No 24-hour orders</td></tr>
-      <tr><th>Translator deposition</th><td class="p">hourly</td><td class="e">On request</td></tr>
+      <tr><th>Prior art for court or the PTAB<small>The full reference, notes for counsel and a signed declaration</small></th><td class="p">$0.30 / word</td></tr>
+      <tr><th>Prior art for reexam<small>The parts you mark and notes for counsel. Declaration on request</small></th><td class="p">$0.30 / word</td></tr>
+      <tr><th>Sorting references against the claims<small>English family members pointed out</small></th><td class="p">quoted with the matter</td></tr>
+      <tr><th>Rush<small>Delivery within 2 business days. No 24-hour orders</small></th><td class="p">+50%</td></tr>
+      <tr><th>Translator deposition<small>On request</small></th><td class="p">hourly</td></tr>
     </tbody>
   </table>
-  <p class="line"><span>Fields: <b>software and computer systems</b>, <b>AI, machine learning and NLP</b>, <b>electronics</b>. We translate PCT patentability reports in every field. For a dispute, we take only these three, because in them we can tell whether the English makes technical sense. References in other fields, such as pharmaceuticals or chemistry, are turned down before work starts.</span></p>
+  <p class="line"><span>Minimum order: <b>$250</b></span><span>Fields: <b>software, AI and electronics</b> (<a href="#why-fields" onclick="document.getElementById('why-fields').open=true">why only these</a>)</span></p>
 
   <h3 class="promise-t">With every order</h3>
   <div class="promise">
@@ -203,7 +202,7 @@
       <details><summary>Can you meet a filing deadline?</summary><p>Give the filing date with your quote request. Delivery within 2 business days adds 50%. There are no 24-hour orders.</p></details>
     </div>
     <div>
-      <details><summary>Why only software, AI and electronics?</summary><p>We translate PCT patentability reports in every field. In a dispute, though, every term can be challenged. We take only references where we can judge whether the technology described makes sense. A reference in another field, such as pharmaceuticals or chemistry, is turned down before any work starts.</p></details>
+      <details id="why-fields"><summary>Why only software, AI and electronics?</summary><p>We translate PCT patentability reports in every field. In a dispute, though, every term can be challenged. We take only references where we can judge whether the technology described makes sense. A reference in another field, such as pharmaceuticals or chemistry, is turned down before any work starts.</p></details>
       <details><summary>Do you give legal advice?</summary><p>No. The notes for counsel cover language only. Claim construction stays with you.</p></details>
     </div>
   </div>

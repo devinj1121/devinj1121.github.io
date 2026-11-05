@@ -206,3 +206,7 @@
 .cta h2{font-size:1.9rem;max-width:42rem}
 .promise-t{margin-top:2.6rem;font-family:var(--sans);font-size:1rem;font-weight:600}
 .promise-t+.promise{margin-top:.8rem}
+
+/* All prices, two columns: what you get under the name, price on the right */
+.compact{max-width:42rem}
+.compact td.p{text-align:right;padding-right:0}
