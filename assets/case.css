@@ -175,3 +175,23 @@
 .bill .bn{display:inline-grid;place-items:center;width:1.3rem;height:1.3rem;margin-right:.7rem;border:1px solid var(--rule-strong);border-radius:50%;font:600 .7rem/1 var(--serif);color:var(--ink-3);vertical-align:.1em}
 .bill .total th{color:var(--ink);font-weight:700}
 .bill{max-width:42rem}
+
+/* grey/black/white only: sorting sheet advice by weight, not colour */
+.triage .go{color:var(--doc-ink);font-weight:700}
+.triage .fam{color:var(--doc-ink-2);font-weight:600}
+.bill td.p{white-space:nowrap}
+
+/* software: plan, check report, monthly log */
+.plan{max-width:40rem;padding:1.2rem 1.4rem;font-size:.86rem;line-height:1.6}
+.plan dl{display:grid;grid-template-columns:7rem minmax(0,1fr);margin:.7rem 0 0}
+.plan dt,.plan dd{padding-block:.4rem;border-top:1px solid var(--doc-rule)}
+.plan dt{color:var(--doc-ink-2);font-size:.8rem}
+.plan dd{margin:0}
+.plan .s{margin-top:.6rem;font-size:.72rem}
+.report{max-width:40rem;padding:1.2rem 1.4rem;font-size:.86rem;line-height:1.6}
+.report .t{display:flex;justify-content:space-between;gap:1rem}
+.report .why{font-size:.78rem;margin-top:.25rem}
+.report p+p:not(.why){margin-top:.9rem}
+.report [lang=ja]{font-family:var(--ja)}
+.report .s{margin-top:.9rem;font-size:.72rem}
+@media (max-width:480px){.plan dl{grid-template-columns:minmax(0,1fr)}.plan dd{border-top:0;padding-top:.1rem}}
