@@ -471,3 +471,7 @@ button.go.btn{font-size:.78rem;padding:.85rem 1.5rem;border:0}
 .lt{display:grid;grid-template-columns:max-content max-content;gap:.55rem 2.25rem}
 .lt li{font-size:.95rem;color:#a8a8a8}
 .lt small{font-size:.8em;color:var(--ink-3);display:block;font-family:var(--sans);font-weight:400;margin-top:.15rem}
+
+/* about: credentials under the bio, photo alone on the right */
+#founder .creds{margin-top:1.6rem;max-width:none}
+#founder .portrait.big{width:15rem;margin-bottom:0}
