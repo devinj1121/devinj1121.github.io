@@ -387,3 +387,26 @@ footer a{color:var(--ink-2)}
 .cmp thead th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:600;border-bottom-color:var(--rule-strong)}
 .cmp tbody th{font-weight:400;color:var(--ink-2);width:34%}
 .cmp td{font-weight:500}
+
+/* photo + motion */
+.hero,.phead{position:relative;isolation:isolate;overflow:hidden}
+.hero{padding-block:5rem}
+.phead{padding-block:4rem 3rem}
+.hero::before,.phead::before{content:"";position:absolute;inset:0;z-index:-2;background:url("../images/bg1.jpg") center/cover;opacity:0;animation:bgIn 2.4s cubic-bezier(.2,.7,.2,1) forwards}
+.hero::after,.phead::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,20,20,.55),rgba(20,20,20,.82) 70%,var(--paper))}
+.phead::after{background:linear-gradient(180deg,rgba(20,20,20,.62),rgba(20,20,20,.88) 75%,var(--paper))}
+@keyframes bgIn{from{opacity:0;transform:scale(1.12)}to{opacity:1;transform:scale(1.04)}}
+.hero .wrap > *,.phead .wrap > *{opacity:0;transform:translateY(14px);animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
+.hero .wrap > *:nth-child(2),.phead .wrap > *:nth-child(2){animation-delay:.25s}
+@keyframes up{to{opacity:1;transform:none}}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+main section:not(.hero) figure{transition:transform .25s ease,box-shadow .25s ease}
+main section:not(.hero) figure:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,0,0,.45)}
+.btn{transition:background-color .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}
+.btn:hover{transform:translateY(-1px)}
+@media (prefers-reduced-motion:reduce){
+  .hero::before,.phead::before,.hero .wrap > *,.phead .wrap > *{animation:none;opacity:1;transform:none}
+  .reveal{opacity:1;transform:none;transition:none}
+  main section:not(.hero) figure:hover,.btn:hover{transform:none}
+}
