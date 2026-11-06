@@ -496,3 +496,6 @@ button.go.btn{font-size:.78rem;padding:.85rem 1.5rem;border:0}
 #record .basis,#record .pubs{margin-top:0}
 #record .basis dd{font-size:.92rem}
 #record .pubs li{padding-block:.85rem}
+#record .col-h{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--ink-3);margin-bottom:.7rem}
+#record .col-h a{text-transform:none;letter-spacing:0;font-weight:500;font-size:.85rem;color:var(--ink-2)}
+#record .col-h{height:1.5rem;align-items:center}
