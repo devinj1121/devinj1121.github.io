@@ -484,3 +484,10 @@ button.go.btn{font-size:.78rem;padding:.85rem 1.5rem;border:0}
 .roles td:last-child{color:var(--ink-3);font-size:.88rem}
 .roles td:first-child{white-space:nowrap;padding-right:1.5rem}
 .roles.in-step{margin:1.2rem 0 1.4rem;max-width:36rem}
+/* about: record grouped by service */
+.basis{margin:1.3rem 0 0;display:grid;grid-template-columns:8.5rem minmax(0,1fr);border-bottom:1px solid var(--rule)}
+.basis dt,.basis dd{margin:0;padding:.85rem 0;border-top:1px solid var(--rule)}
+.basis dt{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--ink);padding-top:1.05rem}
+.basis dd{color:var(--ink-2);font-size:.95rem}
+@media (max-width:520px){.basis{grid-template-columns:1fr}.basis dd{border-top:0;padding-top:0}}
+#founder .portrait.big{width:19rem;border-radius:10px;border-color:transparent;box-shadow:var(--shadow)}
