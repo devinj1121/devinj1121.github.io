@@ -491,3 +491,8 @@ button.go.btn{font-size:.78rem;padding:.85rem 1.5rem;border:0}
 .basis dd{color:var(--ink-2);font-size:.95rem}
 @media (max-width:520px){.basis{grid-template-columns:1fr}.basis dd{border-top:0;padding-top:0}}
 #founder .portrait.big{width:19rem;border-radius:10px;border-color:transparent;box-shadow:var(--shadow)}
+/* about: record header spans both columns so the two lists start on one line */
+#record .rhead{grid-column:1/-1}
+#record .basis,#record .pubs{margin-top:0}
+#record .basis dd{font-size:.92rem}
+#record .pubs li{padding-block:.85rem}
