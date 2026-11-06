@@ -483,3 +483,4 @@ button.go.btn{font-size:.78rem;padding:.85rem 1.5rem;border:0}
 .roles td:first-child{color:var(--ink);font-weight:500}
 .roles td:last-child{color:var(--ink-3);font-size:.88rem}
 .roles td:first-child{white-space:nowrap;padding-right:1.5rem}
+.roles.in-step{margin:1.2rem 0 1.4rem;max-width:36rem}
