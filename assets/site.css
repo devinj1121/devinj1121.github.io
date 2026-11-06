@@ -467,3 +467,7 @@ button.go.btn{font-size:.78rem;padding:.85rem 1.5rem;border:0}
 }
 @media (max-width:600px){ .prices td.p{white-space:normal;text-align:right;max-width:9rem} }
 .triage td.skip{position:static;left:auto;top:auto;background:none;padding:.45rem .4rem .45rem 0;z-index:auto}
+/* logo names: tidy 2 x 2 grid */
+.lt{display:grid;grid-template-columns:max-content max-content;gap:.55rem 2.25rem}
+.lt li{font-size:.95rem;color:#a8a8a8}
+.lt small{font-size:.8em;color:var(--ink-3);display:block;font-family:var(--sans);font-weight:400;margin-top:.15rem}
