@@ -475,3 +475,13 @@ button.go.btn{font-size:.78rem;padding:.85rem 1.5rem;border:0}
 /* about: credentials under the bio, photo alone on the right */
 #founder .creds{margin-top:1.6rem;max-width:none}
 #founder .portrait.big{width:15rem;margin-bottom:0}
+
+/* about: expert letter fields as a letter-like card */
+.fields{background:var(--doc);border:1px solid var(--doc-rule);box-shadow:var(--shadow);padding:1.4rem 1.6rem 1.2rem;max-width:26rem;transform:rotate(-.6deg)}
+.fields .t{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--doc-ink-2)}
+.fields ol{list-style:none;margin:.8rem 0 0;padding:0;counter-reset:f}
+.fields li{counter-increment:f;display:flex;align-items:baseline;gap:1rem;padding:.6rem 0;border-top:1px solid var(--doc-rule);font-family:var(--serif);font-size:1.02rem;color:var(--doc-ink)}
+.fields li::before{content:counter(f,decimal-leading-zero);font-family:var(--mono);font-size:.72rem;color:var(--shu);min-width:1.4rem}
+.fields .sig{margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--doc-rule);font-family:var(--serif);font-style:italic;color:var(--doc-ink-2);font-size:.92rem;display:flex;gap:.8rem;align-items:baseline}
+.fields .sig span{font-family:var(--sans);font-style:normal;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--doc-ink-3)}
+@media (prefers-reduced-motion:reduce){.fields{transform:none}}
